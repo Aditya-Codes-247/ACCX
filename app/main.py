@@ -58,7 +58,7 @@ def create_transaction(transaction: schemas.TransactionCreate, db: Session = Dep
 def ask_question(question: str):
     import google.generativeai as genai
 
-    api_key = "AIzaSyCBP7WPe52aMx5UEVN_Lamy8ZEV7la9l94"
+    api_key = os.getenv("API_KEY")
     if not api_key:
         raise HTTPException(status_code=500, detail="API key not configured")
     
