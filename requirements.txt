@@ -1,6 +1,6 @@
 fastapi
 uvicorn
 sqlalchemy
-pydantic
-google-generativeai
+mangum
 python-dotenv
+google-generativeai
